@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Etch-A-Sketch</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sketch-Etch</h1>
+    </header>
+
+    <main>
+        <div id="canvas"></div>
+
+        <section>
+            <label class="display-grid-value">
+                <input type="range" id="grid-size" min="1" max="64">
+                <p id="display-grid-size-p">16 x 16</p>
+            </label>
+
+            <div class="btn-group">
+                <button type="button" id="rainbow-color">Rainbow Color</button>
+
+                <label>
+                    <select name="" id="select-color" title="colors">
+                        <optgroup label="Colors">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="indigo">Indigo</option>
+                            <option value="violet">Violet</option>
+                        </optgroup>
+                    </select>
+                </label>
+
+                <button type="button" id="clear-color">Clear</button>
+                <button type="button" id="erase-color">Erase</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="sketch.js"></script>
+</body>
+
+</html>
